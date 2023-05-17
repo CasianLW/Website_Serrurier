@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Realisations() {
   const { setActiveNavLink } = useNavSettingsContext();
   useEffect(() => {
-    setActiveNavLink(NavLinkEnum.Home);
+    setActiveNavLink(NavLinkEnum.Realisations);
   }, [setActiveNavLink]);
   return (
     <>
