@@ -1,4 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("./mlStyle.css");
+@import url('./mlStyle.css');
+
+section {
+    @apply my-20 md:py-40;
+}
