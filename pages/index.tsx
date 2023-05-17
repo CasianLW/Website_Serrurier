@@ -10,6 +10,7 @@ import {
   ContactComponent,
 } from "@/components/";
 import { NavLinkEnum } from "@/components/nav";
+import SeoComponent from "@/components/shared/seo-component";
 import { useNavSettingsContext } from "@/context/nav-settings-context";
 import { useEffect } from "react";
 
@@ -20,6 +21,12 @@ export default function Home() {
   }, [setActiveNavLink]);
   return (
     <>
+      <SeoComponent
+        seo={{
+          title: "Homepage Certiclefs ",
+          description: "Description SEO de la page",
+        }}
+      />
       <HeroComponent />
       <main>
         <ServicesComponent />
