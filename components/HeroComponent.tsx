@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const HeroComponent: FC = () => {
   return (
-    <header>
+    <header className="mt-24">
       Hero
       <div>Contenu du hero</div>
     </header>
