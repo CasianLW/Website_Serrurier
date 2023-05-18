@@ -6,3 +6,12 @@
 section {
     @apply my-20 md:py-40;
 }
+
+.contact-btn {
+    @apply rounded-xl text-white;
+    background: linear-gradient(231.84deg, #59f473 0%, #10be2c 100%);
+}
+
+.link-active {
+    @apply text-certiclefs-blue-400;
+}
