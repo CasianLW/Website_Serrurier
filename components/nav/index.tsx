@@ -5,6 +5,7 @@ import { logoSecuriclefs } from "@/assets/shared";
 import Image, { StaticImageData } from "next/image";
 import BurgerComponent from "./burger-component";
 import { useNavSettingsContext } from "@/context/nav-settings-context";
+import PhoneButton from "../shared/phoneButtonComponent";
 
 export enum NavLinkEnum {
   Home = "Home",
@@ -68,7 +69,7 @@ const NavComponent: FC = () => {
   return (
     <nav
       className={
-        "overflow-x-clip fixed inset-0 z-50 grid content-center justify-items-start gap-4 px-[5vw] py-6 before:fixed  before:inset-0 before:bg-cas-black-400 before:transition-all lg:absolute lg:bottom-[initial] lg:flex lg:gap-10 lg:py-8 lg:before:hidden " +
+        "bg-white overflow-x-clip fixed inset-0 z-50 grid content-center justify-items-start gap-4 px-[5vw] py-6 before:fixed  before:inset-0 before:bg-cas-black-400 before:transition-all lg:absolute lg:bottom-[initial] lg:flex lg:gap-10 lg:py-8 lg:before:hidden " +
         `${
           navIsClosed
             ? " background-nav fixed before:translate-x-full before:delay-[500ms] before:rounded-l-[48%]"
@@ -85,14 +86,7 @@ const NavComponent: FC = () => {
           "absolute top-5 left-[5vw] block w-[50px] lg:static lg:my-auto lg:mr-auto lg:w-[64px]"
         }
       />
-      {/* <Link href="/" className="absolute top-5 left-[5vw] block w-[50px] lg:static lg:my-auto lg:mr-auto lg:w-[64px]">
-        <Image
-          className="max-w-[200%] "
-          // src={navIsClosed ? logoCwr : logoCwrMonochrome}
-          src={logoSecuriclefs}
-          alt="Logo Casian"
-        />
-      </Link> */}
+      <PhoneButton supplentaryClasses=" absolute top-5 left-[40vw]" />
 
       <BurgerComponent />
 
