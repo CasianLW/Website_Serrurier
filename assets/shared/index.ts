@@ -22,4 +22,22 @@ import realisation4 from "./realisation-4.jpg";
 
 // import ContactProfileBackground from './contact-background-mouvement.mp4'
 
-export { logoSecuriclefs, faq, faqWave, swisslife, allianz, axa, bnp, ce, gmf, groupama, maaf, maif, matmut, realisation1, realisation2, realisation3, realisation4 };
+export {
+  logoSecuriclefs,
+  faq,
+  faqWave,
+  swisslife,
+  allianz,
+  axa,
+  bnp,
+  ce,
+  gmf,
+  groupama,
+  maaf,
+  maif,
+  matmut,
+  realisation1,
+  realisation2,
+  realisation3,
+  realisation4,
+};
