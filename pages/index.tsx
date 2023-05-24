@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <SeoComponent
         seo={{
-          title: "Homepage Certiclefs ",
+          title: "Accueil - Securiclefs ",
           description: "Description SEO de la page",
         }}
       />
@@ -32,7 +32,7 @@ export default function Home() {
         <ServicesComponent />
         <EtapesComponent />
         <TarifsComponent />
-        <RealisationsComponent />
+        {/* <RealisationsComponent /> */}
         <FaqComponent />
         <AssurancesComponent />
         <UrgenceComponent />

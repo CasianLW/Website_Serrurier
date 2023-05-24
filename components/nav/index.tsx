@@ -9,7 +9,10 @@ import PhoneButton from "../shared/phoneButtonComponent";
 
 export enum NavLinkEnum {
   Home = "Home",
-  Realisations = "Realisations",
+  Services = "Comment ça marche ?",
+  Tarifs = "Nos tarifs",
+  Faq = "Notre équipe",
+  // Realisations = "Nos realisations",
 }
 export const getPathFromNavLink: (navLink: NavLinkEnum) => string = (
   navLink: NavLinkEnum
@@ -17,8 +20,14 @@ export const getPathFromNavLink: (navLink: NavLinkEnum) => string = (
   switch (navLink) {
     case NavLinkEnum.Home:
       return "/";
-    case NavLinkEnum.Realisations:
-      return "/realisations/";
+    case NavLinkEnum.Services:
+      return "/#service";
+    case NavLinkEnum.Tarifs:
+      return "/#tarifs";
+    case NavLinkEnum.Faq:
+      return "/#faq";
+    // case NavLinkEnum.Realisations:
+    //   return "/realisations/";
   }
 };
 
@@ -78,6 +87,9 @@ const NavComponent: FC = () => {
       }
       ref={navRef}
     >
+
+      <BurgerComponent />
+
       <NavLinkComponent
         img={logoSecuriclefs}
         href={"/"}
@@ -86,15 +98,14 @@ const NavComponent: FC = () => {
           "absolute top-5 left-[5vw] block w-[50px] lg:static lg:my-auto lg:mr-auto lg:w-[64px]"
         }
       />
-      <PhoneButton supplentaryClasses=" absolute top-5 left-[40vw]" />
-
-      <BurgerComponent />
 
       {linksAreVisible &&
         navLinks.map((link, i) => {
+          
           const { navLink, supplementaryClasses } = link;
           const href = getPathFromNavLink(navLink);
 
+          if(link.navLink != "Home"){
           return (
             <NavLinkComponent
               key={i}
@@ -103,7 +114,10 @@ const NavComponent: FC = () => {
               supplentaryClasses={supplementaryClasses}
             />
           );
+        }
         })}
+
+      <PhoneButton supplentaryClasses=" absolute top-5 left-[40vw]" />
     </nav>
   );
 };
@@ -111,14 +125,22 @@ const NavComponent: FC = () => {
 export default NavComponent;
 
 const navLinks = [
-  {
-    navLink: NavLinkEnum.Home,
+   {
+    navLink: NavLinkEnum.Services,
     supplementaryClasses: "lg:ml-auto delay-[100ms]",
   },
   {
-    navLink: NavLinkEnum.Realisations,
+    navLink: NavLinkEnum.Tarifs,
     supplementaryClasses: "delay-[200ms]",
   },
+  {
+    navLink: NavLinkEnum.Faq,
+    supplementaryClasses: "delay-[300ms]",
+  },
+  // {
+  //   navLink: NavLinkEnum.Realisations,
+  //   supplementaryClasses: "delay-[200ms]",
+  // },
 ];
 
 interface NavLinkComponentProp {

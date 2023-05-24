@@ -25,10 +25,9 @@ const PhoneButton: FC<BtnProp> = ({
         alt="call phone button"
         width={44}
         height={44}
-        // blurDataURL="data:..." automatically provided
       />
       <div className="text-xs col-span-2 md:text-base">
-        <p className="font-bold">0945131478</p>
+        <p className="font-bold">07 69 47 46 32</p>
         <p>Disponible</p>
       </div>
     </a>
