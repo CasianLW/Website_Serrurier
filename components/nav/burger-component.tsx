@@ -26,7 +26,9 @@ const BurgerComponent: FC = () => {
       {/* <span>{navIsClosed ? "Menu" : "Fermer"}</span> */}
       <div className="grid gap-[6px] w-[40px]">
         <BurgerBarComponent
-          transform={navIsClosed ? null : "translate-y-[3.5px] rotate-45"}
+          transform={
+            navIsClosed ? "w-full" : "w-full translate-y-[3.5px] rotate-45"
+          }
         />
         <BurgerBarComponent
           transform={navIsClosed ? "w-full " : "w-full hidden"}
