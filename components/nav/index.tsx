@@ -65,7 +65,7 @@ const NavComponent: FC = () => {
 
     if (navIsClosed && !closing) {
       timeOut = window.setTimeout(() => {
-        nav.style.height = "80px";
+        nav.style.height = "100px";
       }, 800);
     }
 
@@ -78,7 +78,7 @@ const NavComponent: FC = () => {
   return (
     <nav
       className={
-        "bg-white overflow-x-clip fixed inset-0 z-50 grid content-center justify-items-start gap-4 px-[5vw] py-6 before:fixed  before:inset-0 before:bg-cas-black-400 before:transition-all lg:absolute lg:bottom-[initial] lg:flex lg:gap-10 lg:py-8 lg:before:hidden " +
+        " bg-white overflow-x-clip fixed inset-0 z-50 grid content-center justify-items-start gap-4 px-[5vw] py-6 before:fixed  before:inset-0 before:bg-cas-black-400 before:transition-all lg:absolute lg:bottom-[initial] lg:flex lg:gap-10 lg:py-8 lg:before:hidden " +
         `${
           navIsClosed
             ? " background-nav fixed before:translate-x-full before:delay-[500ms] before:rounded-l-[48%]"
@@ -87,7 +87,6 @@ const NavComponent: FC = () => {
       }
       ref={navRef}
     >
-
       <BurgerComponent />
 
       <NavLinkComponent
@@ -95,29 +94,29 @@ const NavComponent: FC = () => {
         href={"/"}
         navLink={NavLinkEnum.Home}
         supplentaryClasses={
-          "absolute top-5 left-[5vw] block w-[50px] lg:static lg:my-auto lg:mr-auto lg:w-[64px]"
+          "absolute top-5 left-[20vw]  block w-[50px] lg:static lg:my-auto  lg:w-[64px]"
         }
       />
 
       {linksAreVisible &&
         navLinks.map((link, i) => {
-          
           const { navLink, supplementaryClasses } = link;
           const href = getPathFromNavLink(navLink);
 
-          if(link.navLink != "Home"){
-          return (
-            <NavLinkComponent
-              key={i}
-              navLink={navLink}
-              href={href}
-              supplentaryClasses={supplementaryClasses}
-            />
-          );
-        }
+          if (link.navLink != "Home") {
+            return (
+              <NavLinkComponent
+                key={i}
+                navLink={navLink}
+                href={href}
+                supplentaryClasses={supplementaryClasses}
+              />
+            );
+          }
         })}
 
-      <PhoneButton supplentaryClasses=" absolute top-5 left-[40vw]" />
+      {/* <PhoneButton supplentaryClasses=" absolute top-5 left-[40vw]" /> */}
+      <PhoneButton supplentaryClasses="absolute top-8 right-[5vw] md:grid !pl-0  pr-3 md:pl-2 md:pr-4 !text-[8px]" />
     </nav>
   );
 };
@@ -125,17 +124,17 @@ const NavComponent: FC = () => {
 export default NavComponent;
 
 const navLinks = [
-   {
+  {
     navLink: NavLinkEnum.Services,
-    supplementaryClasses: "lg:ml-auto delay-[100ms]",
+    supplementaryClasses: " lg:ml-4 delay-[100ms]",
   },
   {
     navLink: NavLinkEnum.Tarifs,
-    supplementaryClasses: "delay-[200ms]",
+    supplementaryClasses: " delay-[200ms]",
   },
   {
     navLink: NavLinkEnum.Faq,
-    supplementaryClasses: "delay-[300ms]",
+    supplementaryClasses: " lg:mr-auto delay-[300ms]",
   },
   // {
   //   navLink: NavLinkEnum.Realisations,
@@ -162,7 +161,7 @@ const NavLinkComponent: FC<NavLinkComponentProp> = ({
     <Link
       href={href}
       className={
-        "z-0 text-[44px] font-semibold no-underline transition-all lg:translate-x-0 lg:text-[20px] lg:font-normal" +
+        "z-0 self-center text-[24px] font-semibold no-underline transition-all lg:translate-x-0 lg:text-[20px] lg:font-normal" +
         ` ${supplentaryClasses} ${
           navIsClosed && !img ? "translate-x-[100vw]" : "translate-x-0"
         } 
@@ -171,7 +170,7 @@ const NavLinkComponent: FC<NavLinkComponentProp> = ({
       onClick={() => setNavIsClosed(true)}
     >
       {img ? (
-        <Image className="max-w-[200%] " src={img} alt="${img}" />
+        <Image className="max-w-[200%] " src={img} alt="logo serrurier" />
       ) : (
         navLink
       )}
