@@ -78,7 +78,7 @@ const NavComponent: FC = () => {
   return (
     <nav
       className={
-        " bg-white overflow-x-clip fixed inset-0 z-50 grid content-center justify-items-start gap-4 px-[5vw] py-6 before:fixed  before:inset-0 before:bg-cas-black-400 before:transition-all lg:absolute lg:bottom-[initial] lg:flex lg:gap-10 lg:py-8 lg:before:hidden " +
+        "h-[100px] md:h-[140px] bg-white overflow-x-clip fixed inset-0 z-50 grid content-center justify-items-start gap-4 px-[5vw] py-6 before:fixed  before:inset-0 before:bg-cas-black-400 before:transition-all lg:absolute lg:bottom-[initial] lg:flex lg:gap-10 lg:py-8 lg:before:hidden " +
         `${
           navIsClosed
             ? " background-nav fixed before:translate-x-full before:delay-[500ms] before:rounded-l-[48%]"
@@ -126,15 +126,15 @@ export default NavComponent;
 const navLinks = [
   {
     navLink: NavLinkEnum.Services,
-    supplementaryClasses: " lg:ml-4 delay-[100ms]",
+    supplementaryClasses: "md:mt-8 lg:ml-4 delay-[100ms]",
   },
   {
     navLink: NavLinkEnum.Tarifs,
-    supplementaryClasses: " delay-[200ms]",
+    supplementaryClasses: "md:mt-8 delay-[200ms]",
   },
   {
     navLink: NavLinkEnum.Faq,
-    supplementaryClasses: " lg:mr-auto delay-[300ms]",
+    supplementaryClasses: "md:mt-8 lg:mr-auto delay-[300ms]",
   },
   // {
   //   navLink: NavLinkEnum.Realisations,
