@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Head from "next/head";
 
-interface Seo {
+export interface Seo {
   title: string;
   description: string;
 }
