@@ -373,7 +373,8 @@ section {
 }
 #faq .container .card .grid-container > div:last-child .accordion .accordion-item .accordion-header h4,
 #faq .container .card .grid-container > div:last-child .accordion .accordion-item .accordion-header span {
-    color: var(--cl-black);
+    color: var(--cl-blue-dark);
+    /* color: var(--cl-black); */
     font-size: 14px;
     font-weight: bold;
 }
