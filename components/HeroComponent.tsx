@@ -86,7 +86,7 @@ const HeroComponent: FC = () => {
               <p>💎 + 10 ans d’experience</p>
             </SplideSlide>
             <SplideSlide>
-              <p>🔐 + 2000 interventions</p>
+              <p>🔐 + 500 interventions</p>
             </SplideSlide>
             <SplideSlide>
               <p>😷 Gestes barrières</p>
@@ -107,7 +107,7 @@ const HeroComponent: FC = () => {
               <p className="flex mr-3">🎓 Artisans diplômés</p>
             </div>
             <div>
-              <p className="flex mr-3">🔐 + 2000 interventions</p>
+              <p className="flex mr-3">🔐 + 500 interventions</p>
             </div>
             <div>
               <p className="flex">😷 Gestes barrières</p>
