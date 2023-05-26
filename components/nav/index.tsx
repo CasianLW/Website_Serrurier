@@ -12,7 +12,7 @@ export enum NavLinkEnum {
   Services = "Comment ça marche ?",
   Tarifs = "Nos tarifs",
   Faq = "Notre équipe",
-  // Realisations = "Nos realisations",
+  Realisations = "Nos realisations",
 }
 export const getPathFromNavLink: (navLink: NavLinkEnum) => string = (
   navLink: NavLinkEnum
@@ -26,8 +26,8 @@ export const getPathFromNavLink: (navLink: NavLinkEnum) => string = (
       return "/#tarifs";
     case NavLinkEnum.Faq:
       return "/#faq";
-    // case NavLinkEnum.Realisations:
-    //   return "/realisations/";
+    case NavLinkEnum.Realisations:
+      return "/realisations/";
   }
 };
 
