@@ -28,13 +28,15 @@ const Home: NextPage<Props> = () => {
   }, [setActiveNavLink]);
   return (
     <>
-      {/* <SeoComponent
+      <SeoComponent
         seo={{
-          title: "Accueil - Securiclefs ",
-          description: "Description SEO de la page",
+          title: `Services de serrurerie 24h/24 à Paris et en Île-de-France |
+          Securiclefs `,
+          description:
+            "Securiclefs propose des services de serrurerie professionnels et fiables, disponibles 24h/24 à Paris et en Île-de-France. Faites confiance à notre expertise pour assurer la sécurité de votre domicile ou de votre entreprise. #serrurerie #Paris #ÎledeFrance",
         }}
-      /> */}
-      <Head>
+      />
+      {/* <Head>
         <title>
           Services de serrurerie 24h/24 à Paris et en Île-de-France |
           Securiclefs
@@ -51,7 +53,8 @@ const Home: NextPage<Props> = () => {
           property="og:description"
           content="Securiclefs offre des services de serrurerie sur Paris et en Île-de-France. Faites confiance à notre expertise pour tous vos besoins de sécurité. #serrurerie #Paris #ÎledeFrance"
         />
-      </Head>
+      </Head> */}
+
       <HeroComponent />
       <main>
         <ServicesComponent />
