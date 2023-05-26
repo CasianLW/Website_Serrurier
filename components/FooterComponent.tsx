@@ -22,15 +22,18 @@ const FooterComponent: FC = () => {
               <h3>Menu</h3>
               <Link href="#etapes">Comment ça marche ?</Link>
               <Link href="#tarifs">Nos tarifs</Link>
-              <Link href="#equipe">Notre équipe</Link>
+              <Link href="#faq">F.A.G</Link>
               <Link href="#zones">Nos zones</Link>
             </div>
             <div>
               <h3>Contact</h3>
               <Link href="tel:0769474632">07 69 47 46 32</Link>
-              <Link href="#tarifs">Mentions Légales</Link>
-              <Link href="#equipe">Conditions générales</Link>
-              <Link href="#zones">Politique de confidentialité</Link>
+              <Link href="/mentions-legales#mentionslegales">
+                Mentions Légales
+              </Link>
+              <Link href="/mentions-legales#politiques">
+                Politique de confidentialité
+              </Link>
             </div>
             <div className="reseaux">
               <h3>Réseaux</h3>
@@ -51,7 +54,7 @@ const FooterComponent: FC = () => {
                   <Image src={facebook} alt="" width={70} height={70} />
                   <span>@reseau</span>
                 </Link> */}
-                <Link href="" target="_blank">
+                <Link href="https://wa.link/uaapxv" target="_blank">
                   <Image src={whatsapp} alt="" width={70} height={70} />
                 </Link>
               </div>
