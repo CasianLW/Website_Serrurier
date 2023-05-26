@@ -1,4 +1,4 @@
-import logoSecuriclefs from "./logoSecuriclefs.png";
+import logoSecuriclefs from "./logoSecuriclefs.svg";
 import faq from "./faq.png";
 import faqWave from "./faqWave.svg";
 
