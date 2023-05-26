@@ -31,7 +31,7 @@ const FaqComponent: FC = () => {
                     }`}
                     onClick={() => toggleAccordion("faq-1")}
                   >
-                    <h4>
+                    <h4 className="text-securiclefs-blue-600">
                       Sur mon devis, il y a 4 heures de main d&apos;œuvre, mais
                       l&apos;intervention n&apos;a duré que 2 heures. Dois-je
                       quand même payer les 4 heures?
@@ -57,7 +57,7 @@ const FaqComponent: FC = () => {
                     }`}
                     onClick={() => toggleAccordion("faq-2")}
                   >
-                    <h4>
+                    <h4 className="text-securiclefs-blue-600">
                       Une pièce a été posée, mais elle dysfonctionne. Comment ça
                       se passe?
                     </h4>
@@ -83,7 +83,7 @@ const FaqComponent: FC = () => {
                     }`}
                     onClick={() => toggleAccordion("faq-3")}
                   >
-                    <h4>
+                    <h4 className="text-securiclefs-blue-600">
                       L&apos;intervention a duré moins de 30 minutes. Serai-je
                       facturé(e) pour une heure?
                     </h4>
@@ -109,7 +109,7 @@ const FaqComponent: FC = () => {
                     }`}
                     onClick={() => toggleAccordion("faq-4")}
                   >
-                    <h4>
+                    <h4 className="text-securiclefs-blue-600">
                       Je souhaite changer ma porte, mais je ne connais pas les
                       mesures. Comment faire?
                     </h4>
