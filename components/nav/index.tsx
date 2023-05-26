@@ -11,7 +11,7 @@ export enum NavLinkEnum {
   Home = "Home",
   Services = "Comment ça marche ?",
   Tarifs = "Nos tarifs",
-  Faq = "Notre équipe",
+  Faq = "F.A.Q",
   Realisations = "Nos realisations",
 }
 export const getPathFromNavLink: (navLink: NavLinkEnum) => string = (
