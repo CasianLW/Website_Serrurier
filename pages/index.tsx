@@ -47,3 +47,5 @@ const Home: NextPage<Props> = () => {
     </>
   );
 };
+
+export default Home;
