@@ -55,15 +55,6 @@ const UrgenceComponent: FC = () => {
           <PhoneButton />
         </div>
       </section>
-      <section id="urgence">
-        <div className="container">
-          <h2 className="title">Une urgence</h2>
-          <p className="subtitle">
-            N&apos;attendez pas, l&apos;appel et le devis est gratuit.
-          </p>
-          <PhoneButton />
-        </div>
-      </section>
     </>
   );
 };
