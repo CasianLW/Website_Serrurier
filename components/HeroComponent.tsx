@@ -83,7 +83,7 @@ const HeroComponent: FC = () => {
               <p>🎓 Artisans diplômés</p>
             </SplideSlide>
             <SplideSlide>
-              <p>💎 + 10 ans d’experience</p>
+              <p>💎 + 2 ans d’experience</p>
             </SplideSlide>
             <SplideSlide>
               <p>🔐 + 500 interventions</p>
