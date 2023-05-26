@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import { faq, faqWave } from "@/assets/shared";
 
 const FaqComponent: FC = () => {
@@ -25,18 +25,18 @@ const FaqComponent: FC = () => {
             <div>
               <div className="faq-content accordion">
                 <div className="accordion-item">
-                  <div className="accordion-header">
+                  <div
+                    className={`accordion-header close ${
+                      activeAccordion === "faq-1" ? "active" : ""
+                    }`}
+                    onClick={() => toggleAccordion("faq-1")}
+                  >
                     <h4>
                       Sur mon devis, il y a 4 heures de main d&apos;œuvre, mais
-                      l&apos;intervention n&apos;a duré que 2 heures. Dois-je quand même
-                      payer les 4 heures?
+                      l&apos;intervention n&apos;a duré que 2 heures. Dois-je
+                      quand même payer les 4 heures?
                     </h4>
-                    <span
-                      className={`close ${
-                        activeAccordion === "faq-1" ? "active" : ""
-                      }`}
-                      onClick={() => toggleAccordion("faq-1")}
-                    ></span>
+                    <span></span>
                   </div>
                   <div
                     className={`accordion-body ${
@@ -51,16 +51,17 @@ const FaqComponent: FC = () => {
                   </div>
                 </div>
                 <div className="accordion-item">
-                  <div className="accordion-header">
+                  <div
+                    className={`accordion-header close ${
+                      activeAccordion === "faq-2" ? "active" : ""
+                    }`}
+                    onClick={() => toggleAccordion("faq-2")}
+                  >
                     <h4>
-                    Une pièce a été posée, mais elle dysfonctionne. Comment ça se passe?
+                      Une pièce a été posée, mais elle dysfonctionne. Comment ça
+                      se passe?
                     </h4>
-                    <span
-                      className={`close ${
-                        activeAccordion === "faq-2" ? "active" : ""
-                      }`}
-                      onClick={() => toggleAccordion("faq-2")}
-                    ></span>
+                    <span></span>
                   </div>
                   <div
                     className={`accordion-body ${
@@ -69,21 +70,24 @@ const FaqComponent: FC = () => {
                     id="faq-2"
                   >
                     <p>
-                    Chaque pièce est garantie plus de 2 ans. Si celle-ci dysfonctionne, nous viendrons vous la changer gratuitement.
+                      Chaque pièce est garantie plus de 2 ans. Si celle-ci
+                      dysfonctionne, nous viendrons vous la changer
+                      gratuitement.
                     </p>
                   </div>
                 </div>
                 <div className="accordion-item">
-                  <div className="accordion-header">
+                  <div
+                    className={`accordion-header close ${
+                      activeAccordion === "faq-3" ? "active" : ""
+                    }`}
+                    onClick={() => toggleAccordion("faq-3")}
+                  >
                     <h4>
-                    L&apos;intervention a duré moins de 30 minutes. Serai-je facturé(e) pour une heure?
+                      L&apos;intervention a duré moins de 30 minutes. Serai-je
+                      facturé(e) pour une heure?
                     </h4>
-                    <span
-                      className={`close ${
-                        activeAccordion === "faq-3" ? "active" : ""
-                      }`}
-                      onClick={() => toggleAccordion("faq-3")}
-                    ></span>
+                    <span></span>
                   </div>
                   <div
                     className={`accordion-body ${
@@ -92,21 +96,24 @@ const FaqComponent: FC = () => {
                     id="faq-3"
                   >
                     <p>
-                    Non, si l&apos;intervention dure moins de 30 minutes, vous serez facturé(e) pour 30 minutes. Si celle-ci dure plus de 30 minutes, vous serez facturé(e) à l&apos;heure.
+                      Non, si l&apos;intervention dure moins de 30 minutes, vous
+                      serez facturé(e) pour 30 minutes. Si celle-ci dure plus de
+                      30 minutes, vous serez facturé(e) à l&apos;heure.
                     </p>
                   </div>
                 </div>
                 <div className="accordion-item">
-                  <div className="accordion-header">
+                  <div
+                    className={`accordion-header close ${
+                      activeAccordion === "faq-4" ? "active" : ""
+                    }`}
+                    onClick={() => toggleAccordion("faq-4")}
+                  >
                     <h4>
-                    Je souhaite changer ma porte, mais je ne connais pas les mesures. Comment faire?
+                      Je souhaite changer ma porte, mais je ne connais pas les
+                      mesures. Comment faire?
                     </h4>
-                    <span
-                      className={`close ${
-                        activeAccordion === "faq-4" ? "active" : ""
-                      }`}
-                      onClick={() => toggleAccordion("faq-4")}
-                    ></span>
+                    <span></span>
                   </div>
                   <div
                     className={`accordion-body ${
@@ -115,7 +122,9 @@ const FaqComponent: FC = () => {
                     id="faq-4"
                   >
                     <p>
-                    Pour chaque intervention nécessitant une prise de mesures, le serrurier se déplacera pour faire le nécessaire avant de vous fournir un devis.
+                      Pour chaque intervention nécessitant une prise de mesures,
+                      le serrurier se déplacera pour faire le nécessaire avant
+                      de vous fournir un devis.
                     </p>
                   </div>
                 </div>
